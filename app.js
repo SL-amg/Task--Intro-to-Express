@@ -15,6 +15,15 @@ app.get('/', (req, res) => {
     })
   })
 
+  // to use jason 
+
+  app.get('/me', (req, res) => {
+    res.json({name: "Salah Al Abbas",
+        age: "55",
+        Job: "Teacher"
+    })
+  })
+
 app.listen(port, () => {
     console.log("this is my first BackEnd Server and it is online");
   });
