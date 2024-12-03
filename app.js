@@ -99,7 +99,7 @@ app.delete('/books/:bookId', (req, res) => {
 // class notes for Day 2  ,, to Modify book details -----------------------------------
 
 const updateBook = (currentBook, newData) => {
-  const myUpdatedBook = Object.assign(currentBook, newData)
+  const myUpdatedBook = Object.assign(currentBook, newData) // to add to object to make one
   return myUpdatedBook
 }
 app.put('/books/:bookId', (req, res) => {
@@ -113,11 +113,11 @@ app.put('/books/:bookId', (req, res) => {
   }
 })
 
-// class notes for Day 2  ,, to add a  book to list -----------------------------------
+// class notes for Day 2  ,, to add a  book to list with number 4 id-----------------------------------
 const createNewBook = (newBookData) => {
   console.log("Creating new book", newBookData)
-  const newId = books.length + 1
-  const newBook = Object.assign({ id: newId }, newBookData)
+  const newId = books.length + 1 // to add the id number 4 by using length of array
+  const newBook = Object.assign({ id: newId }, newBookData) 
   console.log("My new book is: ", newBook)
   return newBook
 }
