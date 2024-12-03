@@ -1,6 +1,6 @@
-//this is a sample
+//this is a sample of books array
 
-const books=[
+const books=[ // we create an array
     {
         id: 1,
         name: "Kuwait is free",
